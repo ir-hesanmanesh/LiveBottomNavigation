@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="LiveBottomNavigationBackgroundColor">#FFFFFF</color>
+    <color name="LiveBottomNavigationPassiveColor">#00C853</color>
+    <color name="LiveBottomNavigationPressedColor">#2E2F33</color>
+    <color name="LiveBottomNavigationActiveColor">#F9FAFE</color>
+</resources>
