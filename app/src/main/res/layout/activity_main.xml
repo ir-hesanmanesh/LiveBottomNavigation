@@ -23,7 +23,7 @@
             android:orientation="horizontal"
             app:menu="@menu/live_bottom_nav"
             app:active_color="#4A810C"
-            app:passive_color="#0F0505"
+            app:passive_color="#6200EA"
             app:pressed_color="#860A0A"
             app:item_text_size="14sp"
             app:item_padding="4dp"
