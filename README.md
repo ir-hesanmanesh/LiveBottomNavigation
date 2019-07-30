@@ -19,7 +19,7 @@ dependencies{
 }
 ```
 
-> ** Create Menu**
+> **Create Menu**
 
 ```kotlin
 <?xml version="1.0" encoding="utf-8"?>
@@ -45,7 +45,7 @@ dependencies{
 </menu>
 ```
 
-> ** layout add bottomnavigation
+> **layout add bottomnavigation**
 
 ```kotlin
 <?xml version="1.0" encoding="utf-8"?>
@@ -86,7 +86,7 @@ dependencies{
 </android.support.constraint.ConstraintLayout>
 ```
 
-< ** code Activity **
+> **code Activity**
 
 ```kotlin
   LiveBottomNav.setOnNavigationItemChangedListener(object : OnLiveNavigationItemChangeListener {
