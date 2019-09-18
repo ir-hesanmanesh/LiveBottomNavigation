@@ -15,7 +15,7 @@ allprojects {
 
 ```kotlin
 dependencies{
- implementation 'com.github.ir-hesanmanesh:LiveBottomNavigation:1.1.0'
+ implementation 'com.github.ir-hesanmanesh:LiveBottomNavigation:1.1.1'
 }
 ```
 
