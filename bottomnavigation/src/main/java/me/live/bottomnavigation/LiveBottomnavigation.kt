@@ -5,7 +5,6 @@ import android.animation.ValueAnimator
 import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Rect
-import android.graphics.Typeface
 import android.util.AttributeSet
 import android.util.Log
 import android.util.TypedValue
@@ -84,7 +83,7 @@ class LiveBottomnavigation @JvmOverloads constructor(
         }
         if (attr.hasValue(R.styleable.LiveBottomNavigation_animation_duration)) {
             val animDuration = attr.getInteger(R.styleable.LiveBottomNavigation_animation_duration, 0)
-            params.animationDuraction = animDuration
+            params.animationDuration = animDuration
         }
         if (attr.hasValue(R.styleable.LiveBottomNavigation_scale_percent)) {
             val scalePercent = attr.getInteger(R.styleable.LiveBottomNavigation_scale_percent, 0)
@@ -222,7 +221,7 @@ class LiveBottomnavigation @JvmOverloads constructor(
             Animation.RELATIVE_TO_PARENT, 0.5f
         )
         animation.fillAfter = true
-        animation.duration = params.animationDuraction.toLong()
+        animation.duration = params.animationDuration.toLong()
         navigationItem.view.startAnimation(animation)
     }
 
@@ -249,7 +248,7 @@ class LiveBottomnavigation @JvmOverloads constructor(
             colorTo = params.activeColor
         }
         val colorAnimation = ValueAnimator.ofObject(ArgbEvaluator(), colorFrom, colorTo)
-        colorAnimation.duration = params.animationDuraction.toLong()
+        colorAnimation.duration = params.animationDuration.toLong()
         colorAnimation.addUpdateListener { animator ->
             val navigationItemColor = animator.animatedValue as Int
             navigationItem.textView.setTextColor(navigationItemColor)
